@@ -34,17 +34,22 @@ function UsersList() {
   }
 
   return (
-    <div>
-      <h1 className="text-5xl text-gray-600">List of Users</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        {users?.map((userObj) => (
-          <div key={userObj.email} className="p-10 shadow-2xl cursor-pointer" onClick={()=>gotoUser(userObj)}>
-            <p className="text-2xl">{userObj.name}</p>
-            <p className="text-2xl">{userObj.email}</p>
+      <div>
+          <h1 className="text-5xl text-gray-600 mb-6">List of Users</h1>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+            {users?.map((userObj) => (
+              <div
+                key={userObj.email}
+                className="p-6 shadow-2xl rounded-lg cursor-pointer break-words overflow-hidden"
+                onClick={() => gotoUser(userObj)}
+              >
+                <p className="text-xl font-semibold">{userObj.name}</p>
+                <p className="text-lg text-gray-600 break-all">{userObj.email}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
   );
 }
 
