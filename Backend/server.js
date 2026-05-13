@@ -10,9 +10,9 @@ config();
 // Create HTTP Server
 const app = exp();
 //add cors
-app.use(cors({
-  origin:['http://localhost:5173']
-}))
+app.use(cors(
+  // {origin:['http://localhost:5173']}
+))
 // Add body parser middleware
 app.use(exp.json());
 // Forward req to UserAPI if path starts with /user-api
