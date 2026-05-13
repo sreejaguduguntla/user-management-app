@@ -21,7 +21,7 @@ app.use("/user-api", UserApp);
 // Connect to DB
 async function connectDB() {
   try {
-    await connect(process.env.DB_URL);
+    await connect(process.env.MONGO_URI);
     console.log("Connected to DB");
     //assign port number
     const port = process.env.PORT;
