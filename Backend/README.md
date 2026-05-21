@@ -31,21 +31,11 @@ A robust and scalable backend for the User Management Application built using No
 ```text
 backend/
 │
-├── controllers/
-│   └── userController.js
+├── API's/
+│   └── userAPI.js
 │
 ├── models/
-│   └── User.js
-│
-├── routes/
-│   └── userRoutes.js
-│
-├── config/
-│   └── db.js
-│
-├── middleware/
-│   └── errorMiddleware.js
-│
+│   └── UserModel.js
 ├── .env
 ├── server.js
 ├── package.json
@@ -244,12 +234,3 @@ Through this project, I gained experience in:
 - Handling Errors and Middleware
 - Managing Environment Variables
 
-## Author
-
-**Sreeja Guduguntla**
-
-Backend Developer | MERN Stack Enthusiast
-
-## License
-
-This project is licensed under the MIT License.
