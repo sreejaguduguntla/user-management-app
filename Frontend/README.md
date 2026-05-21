@@ -1,16 +1,163 @@
-# React + Vite
+# User Management App - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive User Management Application frontend built using React. This application allows users to manage user information efficiently through an intuitive interface with features such as user creation, editing, viewing, and deletion.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User Registration Form
+- View All Users
+- Update User Details
+- Delete Users
+- Responsive Design
+- Form Validation
+- API Integration with Backend
+- Loading and Error Handling
+- Clean and User-Friendly UI
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Axios
+- React Router DOM
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+│
+├── components/
+│   ├── AddUser.jsx
+|   |__ Footer.jsx
+│   ├── UserList.jsx
+│   ├── User.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── AddUser.jsx
+│   ├── EditUser.jsx
+│
+├── services/
+│   └── userService.js
+│
+├── App.js
+├── index.js
+└── styles/
+```
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone <repository-url>
+```
+
+### Navigate to Project Directory
+
+```bash
+cd frontend
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
+npm start
+```
+
+The application will run on:
+
+```text
+http://localhost:3000
+```
+
+## Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+REACT_APP_API_URL=http://localhost:5000/api
+```
+
+Update the URL according to your backend server configuration.
+
+## API Endpoints Used
+
+| Method | Endpoint | Description |
+|----------|-----------|-------------|
+| GET | /users | Fetch all users |
+| GET | /users/:id | Fetch single user |
+| POST | /users | Create a new user |
+| PUT | /users/:id | Update user details |
+| DELETE | /users/:id | Delete a user |
+
+## Available Scripts
+
+### Run Development Server
+
+```bash
+npm start
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Run Tests
+
+```bash
+npm test
+```
+
+## Screenshots
+
+Add application screenshots here.
+
+### Home Page
+
+```
+Screenshot Here
+```
+
+### Add User Page
+
+```
+Screenshot Here
+```
+
+### User List Page
+
+```
+Screenshot Here
+```
+
+## Future Enhancements
+
+- User Authentication
+- Role-Based Access Control
+- Search and Filtering
+- Pagination
+- Dark Mode
+- Profile Picture Upload
+- Dashboard Analytics
+
+## Learning Outcomes
+
+Through this project, I gained experience in:
+
+- Building reusable React components
+- Managing application state
+- Integrating frontend with REST APIs
+- Handling forms and validations
+- Implementing CRUD operations
+- Creating responsive user interfaces
